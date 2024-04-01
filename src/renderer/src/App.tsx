@@ -1,12 +1,12 @@
-import { Content, RootLayout, Sidebar, Topbar } from '@/components'
+import { Content, DraggableTopbar, RootLayout, Sidebar } from '@/components'
 
 function App(): JSX.Element {
   return (
     <>
-      <RootLayout>
-        <Topbar>Topbar</Topbar>
-        <Sidebar>Sidebar</Sidebar>
-        <Content>Content</Content>
+      <DraggableTopbar />
+      <RootLayout className="">
+        <Sidebar className="p-2"></Sidebar>
+        <Content className="border-l border-l-slate-500/30 bg-slate-700/50 border-t border-t-slate-500/30"></Content>
       </RootLayout>
     </>
   )

@@ -11,10 +11,16 @@ function createWindow(): void {
     show: false,
     autoHideMenuBar: true,
     ...(process.platform === 'linux' ? { icon } : {}),
-    // center: true,
-    // frame: false,
-    // titleBarStyle: 'hidden',
-    backgroundMaterial: 'acrylic',
+    center: true,
+    frame: false,
+    titleBarStyle: 'hidden',
+
+    titleBarOverlay: {
+      color: '#1E293B',
+      symbolColor: '#74b1be',
+      height: 32
+    },
+    // backgroundMaterial: 'acrylic',
     webPreferences: {
       preload: join(__dirname, '../preload/index.js'),
       sandbox: true,

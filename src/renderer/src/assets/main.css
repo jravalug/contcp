@@ -18,5 +18,14 @@
     @apply font-mono antialiased text-white;
 
     @apply overflow-hidden;
+
+    @apply bg-slate-800;
+  }
+
+  header {
+    -webkit-app-region: drag;
+  }
+  button {
+    -webkit-app-region: no-drag;
   }
 }

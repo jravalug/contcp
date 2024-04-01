@@ -9,17 +9,9 @@ export const RootLayout = ({ children, className, ...props }: ComponentProps<'ma
   )
 }
 
-export const Topbar = ({ children, className, ...props }: ComponentProps<'header'>) => {
-  return (
-    <header className={twMerge('h-8 w-screen fixed top-0', className)} {...props}>
-      {children}
-    </header>
-  )
-}
-
 export const Sidebar = ({ children, className, ...props }: ComponentProps<'aside'>) => {
   return (
-    <aside className={twMerge('w-12 overflow-auto', className)} {...props}>
+    <aside className={twMerge('w-24 mt-8 overflow-auto', className)} {...props}>
       {children}
     </aside>
   )
@@ -27,7 +19,7 @@ export const Sidebar = ({ children, className, ...props }: ComponentProps<'aside
 
 export const Content = forwardRef<HTMLDivElement, ComponentProps<'div'>>(
   ({ children, className, ...props }, ref) => (
-    <div ref={ref} className={twMerge('flex-1 overflow-auto', className)} {...props}>
+    <div ref={ref} className={twMerge('flex-1 overflow-auto mt-8', className)} {...props}>
       {children}
     </div>
   )
