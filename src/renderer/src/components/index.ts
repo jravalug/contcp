@@ -1,2 +1,2 @@
-export * from './DraggableTopbar'
 export * from './Layout'
+export * from './TitleBar'

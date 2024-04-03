@@ -22,7 +22,13 @@
     @apply bg-slate-800;
   }
 
-  header {
+  #titlebar-draggable {
+    display: block;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
     -webkit-app-region: drag;
   }
   button {
