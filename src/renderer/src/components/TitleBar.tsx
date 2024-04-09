@@ -5,7 +5,7 @@ import { twMerge } from 'tailwind-merge'
 export const ContentLeft = () => {
   return (
     <div className="flex items-center h-full grow-[2] justify-start order-none w-[20%] z-[2500]">
-      <span className="pl-4">SAMAG</span>
+      <span className="pl-6">SAMAG</span>
     </div>
   )
 }

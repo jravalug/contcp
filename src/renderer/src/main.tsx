@@ -11,20 +11,36 @@ const router = createBrowserRouter([
     element: <App />,
     children: [
       {
-        path: '/gastos',
-        element: <Link to={`/`}>Gastos</Link>
+        path: '/cliente',
+        element: <Link to={`/`}>Cliente</Link>
       },
       {
         path: '/ingresos',
-        element: <Link to={`/`}>Ingresos</Link>
+        element: <Link to={`/`}>Ingresos 📨</Link>
+      },
+      {
+        path: '/gastos',
+        element: <Link to={`/`}>Gastos 🧢</Link>
+      },
+      {
+        path: '/nomina',
+        element: <Link to={`/`}>Nómina 🫂</Link>
       },
       {
         path: '/tributos',
-        element: <Link to={`/`}>Tributos</Link>
+        element: <Link to={`/`}>Tributos ♉</Link>
+      },
+      {
+        path: '/prorrateo',
+        element: <Link to={`/`}>Prorrateo</Link>
       },
       {
         path: '/reportes',
         element: <Link to={`/`}>Reportes</Link>
+      },
+      {
+        path: '/configuracion',
+        element: <Link to={`/`}>Configuración 💠</Link>
       }
     ]
   }
